@@ -115,36 +115,39 @@ body
       text-decoration: none
       &:hover, &.selected
         color: #000000
-  i
-    dashboard
-      //background: url(../images/dashboard_icon.png) no-repeat
-      @include icons-sprite(dashboard_icon)
-      padding-right: 25px
-      height: 13px
-      width: 20px
-    &.jobs
-      //background: url(../images/jobs_icon.png) no-repeat
-      @include icons-sprite(jobs_icon)
-      padding-right: 25px
-      height: 13px
-      width: 20px
-    &.transDir
-      background: url(../images/transdir_icon.png) no-repeat
-      padding-right: 25px
-      height: 13px
-      width: 20px
-      color: #000000
-    &.langAssets
-      background: url(../images/langassets_icon.png) no-repeat
-      padding-right: 25px
-      height: 13px
-      width: 20px
-    &.teams
-      background: url(../images/team_icon.png) no-repeat
-      margin: 0px 0px 0px 0px
-      padding-right: 25px
-      height: 13px
-      width: 20px
+      i
+        &.dashboard
+          //background: url(../images/dashboard_icon.png) no-repeat
+          @include icons-sprite(dashboard_icon)
+          padding-right: 25px
+          height: 13px
+          width: 20px
+        &.jobs
+          //background: url(../images/jobs_icon.png) no-repeat
+          @include icons-sprite(jobs_icon)
+          padding-right: 25px
+          height: 13px
+          width: 20px
+        &.transDir
+          //background: url(../images/transdir_icon.png) no-repeat
+          @include icons-sprite(transdir_icon)
+          padding-right: 25px
+          height: 13px
+          width: 20px
+          color: #000000
+        &.langAssets
+          //background: url(../images/langassets_icon.png) no-repeat
+          @include icons-sprite(langassets_icon)
+          padding-right: 25px
+          height: 13px
+          width: 20px
+        &.teams
+          //background: url(../images/team_icon.png) no-repeat
+          @include icons-sprite(team_icon)
+          margin: 0px 0px 0px 0px
+          padding-right: 25px
+          height: 13px
+          width: 20px
 
 #content
   width: 960px
@@ -180,24 +183,27 @@ body
 
 a
   &.twitter
-    background-image: url(../images/twitter.png)
-    background-repeat: no-repeat
+    //background-image: url(../images/twitter.png)
+    //background-repeat: no-repeat
+    @include icons-sprite(twitter)
     height: 16px
     width: 16px
     position: absolute
     top: 58px
     left: 97px
   &.facebook
-    background-image: url(../images/facebook.png)
-    background-repeat: no-repeat
+    //background-image: url(../images/facebook.png)
+    //background-repeat: no-repeat
+    @include icons-sprite(facebook)
     height: 16px
     width: 16px
     position: absolute
     top: 80px
     left: 87px
   &.linkedIn
-    background-image: url(../images/linkedin.png)
-    background-repeat: no-repeat
+    //background-image: url(../images/linkedin.png)
+    //background-repeat: no-repeat
+    @include icons-sprite(linkedin)
     height: 16px
     width: 16px
     position: absolute
@@ -332,7 +338,9 @@ a
     color: #666666
     display: block
     i
-      background: url(../images/address.png) no-repeat
+      //background: url(../images/address.png) no-repeat
+      @include icons-sprite(address)
+
       width: 15px
       height: 15px
       padding-left: 25px
@@ -344,7 +352,8 @@ a
     color: #666666
     margin-right: 5px
     i
-      background: url(../images/phone.png) no-repeat
+      //background: url(../images/phone.png) no-repeat
+      @include icons-sprite(phone)
       width: 15px
       height: 15px
       padding-left: 13px
@@ -357,7 +366,8 @@ a
     color: #666666
     float: right
     i
-      background: url(../images/fax.png) no-repeat
+      //background: url(../images/fax.png) no-repeat
+      @include icons-sprite(fax)
       width: 15px
       height: 15px
       padding-left: 25px
@@ -370,7 +380,8 @@ a
       color: #666666
       margin-right: 5px
     i
-      background: url(../images/mail.png) no-repeat
+      //background: url(../images/mail.png) no-repeat
+      @include icons-sprite(mail)
       width: 15px
       height: 15px
       padding-left: 13px
@@ -383,7 +394,8 @@ a
     color: #666666
     float: right
     i
-      background: url(../images/email.png) no-repeat
+      //background: url(../images/email.png) no-repeat
+      @include icons-sprite(email)
       width: 15px
       height: 15px
       padding-left: 25px
@@ -404,7 +416,8 @@ a
   border-bottom: 1px solid #ebebeb
   margin-bottom: 14px
   i
-    background: url(../images/jobhistory.png) no-repeat
+    //background: url(../images/jobhistory.png) no-repeat
+    @include icons-sprite(jobhistory)
     height: 26px
     width: 33px
     padding-left: 40px
@@ -456,8 +469,9 @@ h3
   border-bottom: 1px solid #ebebeb
   margin-bottom: 22px
   i
-    background-image: url(../images/education.png)
-    background-repeat: no-repeat
+    //background-image: url(../images/education.png)
+    //background-repeat: no-repeat
+    @include icons-sprite(education)
     padding-left: 48px
     width: 40px
     height: 30px
@@ -505,16 +519,18 @@ h3
     a
       &.pre
         float: right
-        background-image: url(../images/prevarrow.png)
-        background-repeat: no-repeat
+        //background-image: url(../images/prevarrow.png)
+        //background-repeat: no-repeat
+        @include icons-sprite(prevarrow)
         width: 15px
         height: 20px
         display: block
         margin-right: 9px
       &.next
         float: right
-        background-image: url(../images/nextarrow.png)
-        background-repeat: no-repeat
+        //background-image: url(../images/nextarrow.png)
+        //background-repeat: no-repeat
+        @include icons-sprite(nextarrow)
         width: 15px
         height: 20px
         display: block

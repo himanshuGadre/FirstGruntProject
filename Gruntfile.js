@@ -33,6 +33,7 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
+                http_path: '../',
                 sassDir: 'sass',
                 cssDir: 'css',
                 }
