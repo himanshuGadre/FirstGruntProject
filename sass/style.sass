@@ -1,0 +1,734 @@
+html, body, div, class, id, span, applet, object, iframe, h1, h4, h5, h6, p, blockquote, pre, a, b, i, h2, abbr, acronym, address, big, cite, code, s del, dfn, em, img, ins, q, s, samp, small, strike, strong, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0px auto
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+@import "icons/*.png"
+/* HTML5 display-role reset for older browsers
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 12px
+  font-family: Helvetica
+
+#wrapper
+  font-size: 12px
+  line-height: 14px
+  font-family: Helvetica,Arial,sans-serif
+  background-color: #f3f3f3
+
+.clr
+  clear: both
+  float: none
+
+#headerContainer
+  box-shadow: 0 2px 5px #d7d7d7
+  margin-bottom: 30px
+  background-color: #ffffff
+
+.header
+  width: 960px
+  margin: 0px auto
+  a.logo
+    //background-image: url(../images/logo.png)
+    @include icons-sprite(logo)
+    //background-repeat: no-repeat
+    width: 140px
+    height: 40px
+    float: left
+    text-indent: -5000px
+    margin: 10px 0px 10px 10px
+
+.headerRight
+  margin: 9px 6px 0px 0px
+  float: right
+  .headerTop
+    margin-bottom: 11px
+    float: right
+    font-family: Helvetica,Arial,sans-serif
+
+.headerTop
+  li
+    float: left
+    font-size: 12px
+    border-left: 1px solid #aaaaaa
+    padding-left: 9px
+    padding-right: 8px
+    display: block
+  .menuStyle
+    padding-right: 0px
+  .noBorder
+    border-left: none
+  li a
+    text-decoration: none
+    color: #444444
+    &:hover
+      color: #dd4422
+
+@font-face
+  font-family: Roboto
+  src: url('../fonts/Roboto-Bold.ttf')
+
+
+@font-face
+  font-family: RobotoRegular
+  src: url('../fonts/Roboto-Regular.ttf')
+
+
+.mainNavigation
+  float: right
+  li
+    float: left
+    margin: 0px 3px 0px 28px
+    a
+      font-family: Roboto
+      font-size: 13px
+      display: block
+      color: #666666
+      word-spacing: 2px
+      text-decoration: none
+      &:hover, &.selected
+        color: #000000
+  i
+    dashboard
+      //background: url(../images/dashboard_icon.png) no-repeat
+      @include icons-sprite(dashboard_icon)
+      padding-right: 25px
+      height: 13px
+      width: 20px
+    &.jobs
+      //background: url(../images/jobs_icon.png) no-repeat
+      @include icons-sprite(jobs_icon)
+      padding-right: 25px
+      height: 13px
+      width: 20px
+    &.transDir
+      background: url(../images/transdir_icon.png) no-repeat
+      padding-right: 25px
+      height: 13px
+      width: 20px
+      color: #000000
+    &.langAssets
+      background: url(../images/langassets_icon.png) no-repeat
+      padding-right: 25px
+      height: 13px
+      width: 20px
+    &.teams
+      background: url(../images/team_icon.png) no-repeat
+      margin: 0px 0px 0px 0px
+      padding-right: 25px
+      height: 13px
+      width: 20px
+
+#content
+  width: 960px
+  border-radius: 5px
+  border: 1px solid #d5d5d5
+  box-shadow: 0px 0px 3px #d5d5d5
+  background-color: #ffffff
+  margin-bottom: 50px
+
+.leftContent
+  width: 680px
+  float: left
+  box-shadow: 3px 0px 2px -1px #ebebeb
+
+.topContent
+  background-color: #444444
+  border-top-left-radius: 5px
+  padding: 15px 20px 6px 20px
+  margin-bottom: 26px
+  color: #ffffff
+
+.leftTopContent
+  width: 115px
+  margin-right: 27px
+  float: left
+
+.profile
+  position: relative
+  img
+    border-radius: 50%
+    border: 5px solid #2f2f2f
+    margin-bottom: 16px
+
+a
+  &.twitter
+    background-image: url(../images/twitter.png)
+    background-repeat: no-repeat
+    height: 16px
+    width: 16px
+    position: absolute
+    top: 58px
+    left: 97px
+  &.facebook
+    background-image: url(../images/facebook.png)
+    background-repeat: no-repeat
+    height: 16px
+    width: 16px
+    position: absolute
+    top: 80px
+    left: 87px
+  &.linkedIn
+    background-image: url(../images/linkedin.png)
+    background-repeat: no-repeat
+    height: 16px
+    width: 16px
+    position: absolute
+    top: 95px
+    left: 68px
+
+.leftTopContent a:hover
+  opacity: 0.6
+
+.ribbon
+  background-image: url(../images/ribbon.png)
+  background-repeat: no-repeat
+  width: 116px
+  height: 20px
+
+.middleTopContent
+  float: left
+  width: 290px
+  word-wrap: break-word
+  margin-right: 5px
+  h2
+    font-weight: bold
+    font-size: 24px
+    line-height: 26px
+    font-family: Roboto
+    margin-bottom: 7px
+  .location
+    font-family: Helvetica
+    font-size: 12px
+    line-height: 16px
+    color: #aaaaaa
+  h3
+    font-weight: bold
+    font-family: Helvetica
+    font-size: 14px
+    line-height: 16px
+    color: #ffffff
+    margin-bottom: 8px
+  .infoList
+    li
+      font-family: Helvetica
+      font-size: 12px
+      line-height: 18px
+    .titleStyle
+      color: #aaaaaa
+    .infoStyle
+      color: #ffffff
+
+.rightTopContent
+  max-width: 203px
+  float: right
+  word-wrap: break-word
+
+.firstRightTopContent
+  float: right
+  margin-bottom: 11px
+  li
+    float: left
+    margin: 0px 1px 0px 1px
+
+.active
+  background-image: url(../images/star.png)
+  background-repeat: no-repeat
+  width: 14px
+  height: 13px
+
+.noRating
+  background-image: url(../images/noRating.png)
+  background-repeat: no-repeat
+  width: 14px
+  height: 13px
+
+.recommend
+  font-size: 14px
+  line-height: 16px
+  font-family: Helvetica
+  color: #aaaaaa
+  float: right
+  margin-bottom: 30px
+
+.countNum
+  color: #ffffff
+
+.bottomRightTopContent
+  float: right
+
+.upgradeBtn
+  float: right
+  max-width: 203px
+  padding-top: 1px
+  padding-right: 16px
+  padding-bottom: 1px
+  padding-left: 16px
+  background: -webkit-gradient(linear, left top, left bottom, from(#525252), to(#222222))
+  background: -moz-linear-gradient(top, #525252, #222222)
+  background: -o-linear-gradient(top, #525252, #222222)
+  border-radius: 5px
+  border: 1px solid #000000
+  box-shadow: inset 0px 0px 2px #ffffff
+  box-shadow: 1px 0px 5px #000000
+  font-size: 14px
+  font-family: Helvetica
+  line-height: 24px
+  text-decoration: none
+  color: #ffffff
+  margin-bottom: 15px
+
+.features
+  float: right
+  font-size: 12px
+  line-height: 16px
+  font-family: RobotoRegular
+  color: #aaaaaa
+  text-align: right
+
+.money
+  color: #ffffff
+
+.leftMainContent
+  width: 610px
+
+.personalDetails
+  border-bottom: 1px solid #ebebeb
+  margin-bottom: 36px
+  padding-bottom: 16px
+  li
+    margin-bottom: 16px
+  .address
+    max-width: 610px
+    font-size: 14px
+    line-height: 16px
+    color: #666666
+    display: block
+    i
+      background: url(../images/address.png) no-repeat
+      width: 15px
+      height: 15px
+      padding-left: 25px
+  .phone
+    width: 280px
+    word-wrap: break-word
+    font-size: 14px
+    line-height: 16px
+    color: #666666
+    margin-right: 5px
+    i
+      background: url(../images/phone.png) no-repeat
+      width: 15px
+      height: 15px
+      padding-left: 13px
+      float: left
+  .fax
+    width: 300px
+    word-wrap: break-word
+    font-size: 14px
+    line-height: 16px
+    color: #666666
+    float: right
+    i
+      background: url(../images/fax.png) no-repeat
+      width: 15px
+      height: 15px
+      padding-left: 25px
+  .mail
+    a
+      width: 280px
+      word-wrap: break-word
+      font-size: 14px
+      line-height: 16px
+      color: #666666
+      margin-right: 5px
+    i
+      background: url(../images/mail.png) no-repeat
+      width: 15px
+      height: 15px
+      padding-left: 13px
+      float: left
+  .url a
+    width: 300px
+    word-wrap: break-word
+    font-size: 14px
+    line-height: 16px
+    color: #666666
+    float: right
+    i
+      background: url(../images/email.png) no-repeat
+      width: 15px
+      height: 15px
+      padding-left: 25px
+    &:hover
+      color: #dd4422
+  li a
+    text-decoration: none
+    color: #dd4422
+    &:hover
+      color: #000000
+
+.middleMainTopContent h2
+  padding-bottom: 10px
+  color: #444444
+  font-family: Roboto
+  font-size: 24px
+  line-height: 26px
+  border-bottom: 1px solid #ebebeb
+  margin-bottom: 14px
+  i
+    background: url(../images/jobhistory.png) no-repeat
+    height: 26px
+    width: 33px
+    padding-left: 40px
+
+.jobHistory
+  margin-bottom: 34px
+  li
+    margin-bottom: 10px
+    border-bottom: 1px solid #ebebeb
+
+h3
+  font-family: Helvetica
+  font-size: 18px
+  line-height: 22px
+  color: #444444
+  font-weight: bold
+  margin-bottom: 8px
+
+.jobHistory .company
+  display: block
+  font-family: Helvetica
+  font-size: 14px
+  line-height: 16px
+  color: #444444
+  margin-bottom: 8px
+
+.month
+  display: block
+  font-family: Helvetica
+  font-size: 11px
+  line-height: 13px
+  color: #aaaaaa
+  margin-bottom: 14px
+
+.jobHistory .details
+  display: block
+  font-family: Helvetica
+  font-size: 12px
+  line-height: 18px
+  color: #888888
+  margin-bottom: 14px
+
+.middleMainBottomContent h2
+  padding-bottom: 8px
+  color: #444444
+  font-family: Roboto
+  font-size: 24px
+  line-height: 36px
+  border-bottom: 1px solid #ebebeb
+  margin-bottom: 22px
+  i
+    background-image: url(../images/education.png)
+    background-repeat: no-repeat
+    padding-left: 48px
+    width: 40px
+    height: 30px
+
+.educationUniversity
+  margin-bottom: 27px
+
+.university h3
+  margin: 0 0 6px 0
+
+.educationUniversity
+  .university
+    width: 265px
+    word-wrap: break-word
+    float: left
+    border-radius: 5px
+    margin: 0 20px 0 0
+    padding: 15px 15px 8px 15px
+    box-shadow: 0px 0px 1px 1px #d9d9d9
+  .clrMargin
+    margin: 0px 0px 0px 0px
+
+.university
+  .certification
+    font-size: 14px
+    line-height: 16px
+    color: #444444
+    margin: 0 0 7px 0
+    display: block
+  .month
+    margin: 0 0 18px 0
+    display: block
+
+.review
+  padding-bottom: 5px
+  border-bottom: 1px solid #ebebeb
+  margin-bottom: 20px
+  h2
+    font-family: Roboto
+    font-size: 24px
+    line-height: 26px
+    color: #444444
+  .arrows
+    float: right
+    a
+      &.pre
+        float: right
+        background-image: url(../images/prevarrow.png)
+        background-repeat: no-repeat
+        width: 15px
+        height: 20px
+        display: block
+        margin-right: 9px
+      &.next
+        float: right
+        background-image: url(../images/nextarrow.png)
+        background-repeat: no-repeat
+        width: 15px
+        height: 20px
+        display: block
+
+.revieweClass
+  margin-bottom: 30px
+
+.reviewClass
+  .reviewBox
+    width: 280px
+    border-radius: 4px
+    border: 1px solid #d9d9d9
+    padding: 9px 0px 15px 9px
+    margin-right: 23px
+    margin-bottom: 23px
+    float: left
+    box-shadow: 1px 0px 2px #d9d9d9
+  .clrMargin
+    margin: 0px 0px 0px 0px
+  .reviewBox .topReview
+    padding-bottom: 8px
+    border-bottom: 1px solid #ebebeb
+    margin-bottom: 7px
+    a
+      display: block
+      float: left
+    img
+      border-radius: 50%
+      border: 1px solid #e1e1e1
+      margin-right: 11px
+      width: 55px
+      height: 58px
+    .nameDesg
+      float: left
+
+.reviewBox .topReview
+  a.adam
+    font-family: Helvetica
+    font-size: 16px
+    line-height: 18px
+    padding-top: 19px
+    display: block
+    color: #3d3d3d
+    text-decoration: none
+    float: left
+    &:hover
+      color: #dd4422
+  .desg
+    font-family: Helvetica
+    font-size: 14px
+    line-height: 18px
+    color: #b7b7b7
+  .ratingDisplay
+    float: right
+    padding-top: 17px
+
+.ratingDisplay li
+  float: left
+  padding-left: 2px
+
+.reviewBox
+  .adamReview
+    font-family: Helvetica
+    font-size: 14px
+    line-height: 16px
+    color: #3d3d3d
+    margin-bottom: 3px
+    display: block
+  .reviewInfo
+    font-family: Helvetica
+    font-size: 12px
+    color: #888888
+    display: block
+    a
+      text-decoration: none
+      color: #dd4422
+      font-size: 12px
+      line-height: 14px
+      &:hover
+        color: #000000
+
+.rightContentContainer
+  width: 280px
+  float: left
+  border-bottom-right-radius: 5px
+  border-top-right-radius: 5px
+  .messageHeader
+    margin: 25px 30px 20px 20px
+    h2
+      padding: 0px 0 0px 0px
+      color: #dd4422
+      float: left
+      text-transform: uppercase
+      line-height: 36px
+      margin: 0px
+      i
+        width: 36px
+        height: 36px
+        float: left
+        display: block
+        background: no-repeat url(../images/message.png)
+        margin-right: 7px
+    span
+      text-transform: uppercase
+      color: #666666
+      float: right
+      margin: 9px 7px 0 0
+    .newMessageContainer
+      float: right
+    .newMessage
+      height: 19px
+      width: 22px
+      color: #dd4422
+      float: right
+      background: #dd4422
+      border-radius: 11px
+      color: #ffffff
+      text-align: center
+      font-family: robotobold
+      padding-top: 3px
+      margin-top: 6px
+  .messagMainContainer
+    .days
+      border-radius: 2px
+      padding: 0 0 20px 0px
+      display: block
+      font-size: 11px
+      .day
+        padding: 2px 5px 2px 5px
+        background: #e5e5e5
+        border-radius: 2px
+        margin: 0 0 15px 15px
+      .borderSeparator
+        background: url(../images/bordershadow.png) no-repeat
+        height: 8px
+        width: 165px
+        float: left
+        margin: 25px 0 2px 0
+      .clr
+        display: block
+    .dayMessage
+      clear: both
+      margin-bottom: 31px
+      ul
+        .clr
+          border: none
+          margin: 0
+          padding: 0
+        margin: 0px 30px 0px 20px
+        li
+          border-bottom: 1px solid #ebebeb
+          margin: 8px 0px 5px 0px
+          a
+            display: block
+            float: left
+            padding: 0 5px 0 0
+          .pic
+            width: 36px
+            height: 36px
+            border-radius: 18px
+            box-shadow: inset 0 0 1px 0 #cccccc
+            float: left
+            margin: 0 10px 7px 0
+            display: block
+          .name
+            display: block
+            font-size: 16px
+            color: #222222
+            margin: 9px 0 0 0px
+            float: left
+            &:hover
+              color: #dd4422
+          span
+            display: block
+            color: #666666
+            margin-bottom: 6px
+            line-height: 15px
+          .time
+            display: block
+            font-size: 11px
+            color: #aaaaaa
+            margin-bottom: 8px
+
+#footer
+  background-color: #444444
+  .footerMenu
+    width: 450px
+
+.footerMenu
+  .footerMainMenu
+    margin-top: 21px
+    float: left
+    margin-bottom: 12px
+    li
+      float: left
+      font-family: Helvetica
+      font-size: 12px
+      line-height: 14px
+      color: #d9d9d9
+      border-left: 1px solid #d9d9d9
+      padding-left: 10px
+      margin-right: 10px
+      a
+        text-decoration: none
+        color: #d9d9d9
+        &:hover
+          color: #000000
+      &.noPadding
+        border-left: 0px
+  .copyrights
+    display: block
+    text-align: center
+    font-family: Helvetica
+    font-size: 12px
+    line-height: 14px
+    color: #888888
+    padding-bottom: 80px
