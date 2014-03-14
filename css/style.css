@@ -7,9 +7,9 @@ html, body, div, class, id, span, applet, object, iframe, h1, h4, h5, h6, p, blo
   font: inherit;
 }
 
-/* line 322, icons/*.png */
+/* line 258, icons/*.png */
 .icons-sprite, .header a.logo, .mainNavigation li a i.dashboard, .mainNavigation li a i.jobs, .mainNavigation li a i.transDir, .mainNavigation li a i.langAssets, .mainNavigation li a i.teams, a.twitter, a.facebook, a.linkedIn, .personalDetails .address i, .personalDetails .phone i, .personalDetails .fax i, .personalDetails .mail i, .personalDetails .url a i, .middleMainTopContent h2 i, .middleMainBottomContent h2 i, .review .arrows a.pre, .review .arrows a.next {
-  background: url('../images/icons-sab84000cd5.png') no-repeat;
+  background: url('../images/icons-sddabdff403.png') no-repeat;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -166,21 +166,21 @@ body {
 }
 /* line 119, ../sass/style.sass */
 .mainNavigation li a i.dashboard {
-  background-position: 0 -473px;
+  background-position: 0 -406px;
   padding-right: 25px;
-  height: 13px;
+  height: 9px;
   width: 20px;
 }
 /* line 125, ../sass/style.sass */
 .mainNavigation li a i.jobs {
-  background-position: 0 -411px;
+  background-position: 0 -365px;
   padding-right: 25px;
   height: 13px;
   width: 20px;
 }
 /* line 131, ../sass/style.sass */
 .mainNavigation li a i.transDir {
-  background-position: 0 -424px;
+  background-position: 0 -378px;
   padding-right: 25px;
   height: 13px;
   width: 20px;
@@ -188,14 +188,14 @@ body {
 }
 /* line 138, ../sass/style.sass */
 .mainNavigation li a i.langAssets {
-  background-position: 0 -516px;
+  background-position: 0 -439px;
   padding-right: 25px;
   height: 13px;
   width: 20px;
 }
 /* line 144, ../sass/style.sass */
 .mainNavigation li a i.teams {
-  background-position: 0 -303px;
+  background-position: 0 -281px;
   margin: 0px 0px 0px 0px;
   padding-right: 25px;
   height: 13px;
@@ -248,7 +248,7 @@ body {
 
 /* line 185, ../sass/style.sass */
 a.twitter {
-  background-position: 0 -188px;
+  background-position: 0 -176px;
   height: 16px;
   width: 16px;
   position: absolute;
@@ -257,7 +257,7 @@ a.twitter {
 }
 /* line 194, ../sass/style.sass */
 a.facebook {
-  background-position: 0 -287px;
+  background-position: 0 -265px;
   height: 16px;
   width: 16px;
   position: absolute;
@@ -266,7 +266,7 @@ a.facebook {
 }
 /* line 203, ../sass/style.sass */
 a.linkedIn {
-  background-position: 0 -204px;
+  background-position: 0 -192px;
   height: 16px;
   width: 16px;
   position: absolute;
@@ -450,7 +450,7 @@ a.linkedIn {
 }
 /* line 340, ../sass/style.sass */
 .personalDetails .address i {
-  background-position: 0 -396px;
+  background-position: 0 -350px;
   width: 15px;
   height: 15px;
   padding-left: 25px;
@@ -466,7 +466,7 @@ a.linkedIn {
 }
 /* line 354, ../sass/style.sass */
 .personalDetails .phone i {
-  background-position: 0 -381px;
+  background-position: 0 -335px;
   width: 15px;
   height: 15px;
   padding-left: 13px;
@@ -483,7 +483,7 @@ a.linkedIn {
 }
 /* line 368, ../sass/style.sass */
 .personalDetails .fax i {
-  background-position: 0 -437px;
+  background-position: 0 -391px;
   width: 15px;
   height: 15px;
   padding-left: 25px;
@@ -499,7 +499,7 @@ a.linkedIn {
 }
 /* line 382, ../sass/style.sass */
 .personalDetails .mail i {
-  background-position: 0 -316px;
+  background-position: 0 -294px;
   width: 15px;
   height: 15px;
   padding-left: 13px;
@@ -516,7 +516,7 @@ a.linkedIn {
 }
 /* line 396, ../sass/style.sass */
 .personalDetails .url a i {
-  background-position: 0 -220px;
+  background-position: 0 -208px;
   width: 15px;
   height: 15px;
   padding-left: 25px;
@@ -547,7 +547,7 @@ a.linkedIn {
 }
 /* line 418, ../sass/style.sass */
 .middleMainTopContent h2 i {
-  background-position: 0 -343px;
+  background-position: 0 -309px;
   height: 26px;
   width: 33px;
   padding-left: 40px;
@@ -680,7 +680,7 @@ h3 {
 /* line 520, ../sass/style.sass */
 .review .arrows a.pre {
   float: right;
-  background-position: 0 -251px;
+  background-position: 0 -239px;
   width: 15px;
   height: 20px;
   display: block;
@@ -689,7 +689,7 @@ h3 {
 /* line 529, ../sass/style.sass */
 .review .arrows a.next {
   float: right;
-  background-position: 0 -235px;
+  background-position: 0 -223px;
   width: 15px;
   height: 20px;
   display: block;
